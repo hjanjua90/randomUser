@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+.users-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 960px) {
+    .users-wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+@media screen and (max-width: 550px) {
+  .users-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.userWrapper {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.img-wrapper {
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 16px;
+}
+.user-gender {
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+.singleWrapper {
+  margin: 10px 0;
+}
+h5,
+h6 {
+  margin: 0;
+}
+.singleWrapper p {
+  display: flex;
+  align-items: center;
+}
+.info {
+  display: inline-block;
+  margin-left: 20px !important;
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.filters .MuiTextField-root{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+.birthSelection{
+    display: flex;
+}
