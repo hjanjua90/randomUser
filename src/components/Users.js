@@ -20,7 +20,7 @@ const Users = () => {
     const [year, setYear] = useState("1995");
     useEffect(() => {
         setdata(users);
-        // es-lint-disable-next-line
+        // eslint-disable-next-line
     }, []);
 
     const handleChange = (event) => {
@@ -69,6 +69,7 @@ const Users = () => {
     const pad2 = (number) => {
         return (number < 10 ? '0' : '') + number
     }
+
     return (
         <>
         <div className="filters">
@@ -95,6 +96,7 @@ const Users = () => {
             onChange={(e) => SearchUser(e)}
             />
         </div>
+
         <div className="birthSelection">
             <Box sx={{ maxWidth: 220 }}>
             <FormControl fullWidth>
@@ -138,8 +140,8 @@ const Users = () => {
             {data.map((d, index) => {
             return (
                 <>
-                <Link to={`/user/${index}`}>
-                    <Card variant="outlined" key={index} className="userWrapper">
+                <Link key={index} to={`/user/${index}`}>
+                    <Card variant="outlined"  className="userWrapper">
                     <div className="img-wrapper">
                         <Avatar
                         alt="Remy Sharp"
